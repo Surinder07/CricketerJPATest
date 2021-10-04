@@ -7,6 +7,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+@Data
 @Entity
 public class Cricketer {
 
@@ -28,34 +29,7 @@ public class Cricketer {
         this.ranking = ranking;
     }
 
-    @Override
-    public String toString() {
-        return "Cricketer{" +
-                "id=" + id +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", team='" + team + '\'' +
-                ", ranking='" + ranking + '\'' +
-                '}';
-    }
 
-    public Long getId() {
-        return id;
-    }
 
-    public String getFirstName() {
-        return firstName;
-    }
 
-    public String getLastName() {
-        return lastName;
-    }
-
-    public String getTeam() {
-        return team;
-    }
-
-    public String getRanking() {
-        return ranking;
-    }
 }
